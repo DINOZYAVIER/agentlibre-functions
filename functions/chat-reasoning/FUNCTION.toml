@@ -1,0 +1,36 @@
+schema = "agentlibre.function/v1"
+id = "agentlibre.chat-reasoning"
+version = "1.0.0"
+agent = { id = "agentlibre.chat-agent", version = "1.0.0" }
+model = { id = "agentlibre.gemma4-12b", version = "1.0.0" }
+extensions = [{ id = "agentlibre.builtins", version = "1.0.0-alpha.15" }]
+tools = [
+    "agentlibre.builtins:fs_list",
+    "agentlibre.builtins:fs_read",
+    "agentlibre.builtins:fs_search",
+]
+working_directory = "."
+
+[inference.generation]
+max_output_tokens = 2048
+
+[inference.reasoning]
+enabled = true
+max_tokens = 1024
+
+[inference.load]
+context_tokens = 16384
+batch_size = 256
+ubatch_size = 128
+threads = 8
+accelerator = "require_gpu"
+gpu_layers = 999
+flash_attention = true
+kv_cache_type_k = "q8_0"
+kv_cache_type_v = "q8_0"
+
+[inference.service]
+slots = 2
+queue_capacity = 8
+continuous_batching = true
+idle_timeout = "15m"

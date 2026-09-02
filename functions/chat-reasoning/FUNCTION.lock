@@ -1,0 +1,36 @@
+schema = "agentlibre.function-lock/v1"
+
+[function]
+id = "agentlibre.chat-reasoning"
+version = "1.0.0"
+content_digest = "sha256:5e7a34ff4222bf6db5ff3a80747662c3e624670d9428e27ee1783cf48a8ae998"
+
+[[entities]]
+kind = "agent"
+id = "agentlibre.chat-agent"
+version = "1.0.0"
+content_digest = "sha256:1599c7fb7f1cbf618439e20669bd69343ea70c930117647095c03f62eaaa920c"
+
+[entities.source]
+kind = "local"
+path = "agents/chat"
+
+[[entities]]
+kind = "model"
+id = "agentlibre.gemma4-12b"
+version = "1.0.0"
+content_digest = "sha256:eaba168c8a729653b6d9ba4d656e9b8c3bad72e98193428bc0dde85c4fbb459e"
+
+[entities.source]
+kind = "local"
+path = "models/gemma4-12b"
+
+[[entities]]
+kind = "extension"
+id = "agentlibre.builtins"
+version = "1.0.0-alpha.15"
+content_digest = "sha256:984e25fbe14af8ce9d31e78508435f96c729115a17a389b614671f9a11c1e1f6"
+
+[entities.source]
+kind = "local"
+path = "extensions/builtins"

@@ -1,0 +1,36 @@
+schema = "agentlibre.function-lock/v1"
+
+[function]
+id = "agentlibre.qwen38-27b-reasoning"
+version = "1.0.0"
+content_digest = "sha256:e20bd5050be62cd976d9c5d1573d10f4c7453d17a85cee6c39fe44e5a7a5750a"
+
+[[entities]]
+kind = "agent"
+id = "agentlibre.chat-agent"
+version = "1.0.0"
+content_digest = "sha256:1599c7fb7f1cbf618439e20669bd69343ea70c930117647095c03f62eaaa920c"
+
+[entities.source]
+kind = "local"
+path = "agents/chat"
+
+[[entities]]
+kind = "model"
+id = "agentlibre.qwen38-27b"
+version = "1.0.0"
+content_digest = "sha256:5674a823d07cbc855cac649f0d61e53ba4f4034e772f269f19048b5723c0986f"
+
+[entities.source]
+kind = "local"
+path = "models/qwen38-27b"
+
+[[entities]]
+kind = "extension"
+id = "agentlibre.builtins"
+version = "1.0.0-alpha.15"
+content_digest = "sha256:984e25fbe14af8ce9d31e78508435f96c729115a17a389b614671f9a11c1e1f6"
+
+[entities.source]
+kind = "local"
+path = "extensions/builtins"
