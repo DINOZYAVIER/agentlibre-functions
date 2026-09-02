@@ -13,10 +13,18 @@ working_directory = "."
 
 [inference.generation]
 max_output_tokens = 10240
+temperature = 1.0
+top_p = 0.95
+top_k = 20
+min_p = 0.0
+presence_penalty = 0.0
+repeat_penalty = 1.0
 
 [inference.reasoning]
 enabled = true
 max_tokens = 8192
+effort = "xhigh"
+preserve = true
 
 [inference.load]
 context_tokens = 65536
@@ -36,3 +44,11 @@ slots = 1
 queue_capacity = 8
 continuous_batching = true
 idle_timeout = "15m"
+
+[limits]
+timeout = "10m"
+model_input_tokens = 500000
+model_output_tokens = 65536
+model_calls = 32
+tool_calls = 32
+tool_result_bytes = 65536

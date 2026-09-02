@@ -29,7 +29,7 @@ path = "models/gemma4-12b"
 kind = "extension"
 id = "agentlibre.builtins"
 version = "1.0.0-alpha.15"
-content_digest = "sha256:984e25fbe14af8ce9d31e78508435f96c729115a17a389b614671f9a11c1e1f6"
+content_digest = "sha256:8570a39e90ab9a0fade1b750beef8b0cf14131675251861abb3aa98793fd975c"
 
 [entities.source]
 kind = "local"

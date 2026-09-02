@@ -3,7 +3,7 @@ schema = "agentlibre.function-lock/v1"
 [function]
 id = "agentlibre.chat-reasoning"
 version = "1.0.0"
-content_digest = "sha256:5e7a34ff4222bf6db5ff3a80747662c3e624670d9428e27ee1783cf48a8ae998"
+content_digest = "sha256:4260094a0d53d33f53cd20261552e710105ae8a4bf6908916c52666ca2676c25"
 
 [[entities]]
 kind = "agent"
@@ -29,7 +29,7 @@ path = "models/gemma4-12b"
 kind = "extension"
 id = "agentlibre.builtins"
 version = "1.0.0-alpha.15"
-content_digest = "sha256:984e25fbe14af8ce9d31e78508435f96c729115a17a389b614671f9a11c1e1f6"
+content_digest = "sha256:8570a39e90ab9a0fade1b750beef8b0cf14131675251861abb3aa98793fd975c"
 
 [entities.source]
 kind = "local"
