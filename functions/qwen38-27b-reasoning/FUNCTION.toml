@@ -12,11 +12,11 @@ tools = [
 working_directory = "."
 
 [inference.generation]
-max_output_tokens = 2048
+max_output_tokens = 10240
 
 [inference.reasoning]
 enabled = true
-max_tokens = 1024
+max_tokens = 8192
 
 [inference.load]
 context_tokens = 65536
