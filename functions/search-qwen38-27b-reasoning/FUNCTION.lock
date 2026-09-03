@@ -3,7 +3,7 @@ schema = "agentlibre.function-lock/v1"
 [function]
 id = "agentlibre.search-qwen38-27b-reasoning"
 version = "1.0.0"
-content_digest = "sha256:79eb630c33596b239a4f55d7f84275d1c657924c3d7bbc5159d34b00feb1680b"
+content_digest = "sha256:606a5bda39a3856708748c5cc0a7dd0244b5b6cdead02596fc9d328eade764a6"
 
 [[entities]]
 kind = "agent"

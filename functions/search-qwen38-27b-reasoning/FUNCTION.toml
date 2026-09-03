@@ -52,9 +52,11 @@ continuous_batching = true
 idle_timeout = "15m"
 
 [limits]
-timeout = "10m"
-model_input_tokens = 500000
-model_output_tokens = 65536
-model_calls = 32
-tool_calls = 32
+timeout = "30m"
+# Cumulative prompt accounting repeats the retained context on every model
+# call. Keep this effectively unlimited; per-call context_tokens remains 65536.
+model_input_tokens = 9223372036854775807
+model_output_tokens = 100000
+model_calls = 100
+tool_calls = 500
 tool_result_bytes = 65536
