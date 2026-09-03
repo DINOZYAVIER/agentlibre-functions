@@ -29,7 +29,7 @@ path = "models/qwen38-27b"
 kind = "extension"
 id = "agentlibre.builtins"
 version = "1.0.0-alpha.15"
-content_digest = "sha256:8570a39e90ab9a0fade1b750beef8b0cf14131675251861abb3aa98793fd975c"
+content_digest = "sha256:f6e5d93588ce2c2fb4e5ebe0195ab24710c77948fa41aeb8fc2f7125a38b2ca3"
 
 [entities.source]
 kind = "local"
