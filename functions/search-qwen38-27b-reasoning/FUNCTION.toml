@@ -1,0 +1,60 @@
+schema = "agentlibre.function/v1"
+id = "agentlibre.search-qwen38-27b-reasoning"
+version = "1.0.0"
+description = "Qwen3.8 27B reasoning with bounded AYEQUE search"
+agent = { id = "agentlibre.chat-agent", version = "1.0.0" }
+model = { id = "agentlibre.qwen38-27b", version = "1.0.0" }
+extensions = [
+    { id = "agentlibre.builtins", version = "1.0.0-alpha.15" },
+    { id = "agentlibre.searxng", version = "1.0.0-alpha.1" },
+]
+tools = [
+    "agentlibre.builtins:fs_read",
+    "agentlibre.searxng:search",
+]
+working_directory = "."
+authority = [
+    { effect = "agentlibre.searxng:query", scope = { service = "ayeque-search", sources = ["web", "wikipedia"] } },
+]
+
+[inference.generation]
+max_output_tokens = 10240
+temperature = 1.0
+top_p = 0.95
+top_k = 20
+min_p = 0.0
+presence_penalty = 0.0
+repeat_penalty = 1.0
+
+[inference.reasoning]
+enabled = true
+max_tokens = 8192
+effort = "xhigh"
+preserve = true
+
+[inference.load]
+context_tokens = 65536
+batch_size = 2048
+ubatch_size = 512
+threads = 12
+threads_batch = 12
+accelerator = "require_gpu"
+gpu_layers = "all"
+mmap = true
+flash_attention = true
+kv_cache_type_k = "f16"
+kv_cache_type_v = "f16"
+
+[inference.service]
+slots = 1
+queue_capacity = 8
+continuous_batching = true
+idle_timeout = "15m"
+
+[limits]
+timeout = "10m"
+model_input_tokens = 500000
+model_output_tokens = 65536
+model_calls = 32
+tool_calls = 32
+tool_result_bytes = 65536
