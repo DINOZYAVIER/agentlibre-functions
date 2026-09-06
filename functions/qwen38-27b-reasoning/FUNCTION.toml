@@ -3,13 +3,15 @@ id = "agentlibre.qwen38-27b-reasoning"
 version = "1.0.0"
 agent = { id = "agentlibre.chat-agent", version = "1.0.0" }
 model = { id = "agentlibre.qwen38-27b", version = "1.0.0" }
-extensions = [{ id = "agentlibre.builtins", version = "1.0.0-alpha.15" }]
-tools = [
-    "agentlibre.builtins:fs_list",
-    "agentlibre.builtins:fs_read",
-    "agentlibre.builtins:fs_search",
+extensions = [
+    { id = "agentlibre.builtins", version = "1.0.0-alpha.15" },
+    { id = "agentlibre.execution", version = "1.0.0-alpha.15" },
 ]
 working_directory = "."
+
+[permissions]
+files = "read"
+commands = ["find", "rg"]
 
 [inference.generation]
 max_output_tokens = 49152

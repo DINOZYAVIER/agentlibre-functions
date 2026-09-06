@@ -4,8 +4,10 @@ version = "1.0.0"
 agent = { id = "agentlibre.chat-agent", version = "1.0.0" }
 model = { id = "agentlibre.gemma4-12b", version = "1.0.0" }
 extensions = [{ id = "agentlibre.builtins", version = "1.0.0-alpha.15" }]
-tools = ["agentlibre.builtins:fs_read"]
 working_directory = "."
+
+[permissions]
+files = "read"
 
 [inference.generation]
 max_output_tokens = 2048

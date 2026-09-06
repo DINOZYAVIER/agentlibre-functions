@@ -3,7 +3,7 @@ schema = "agentlibre.function-lock/v1"
 [function]
 id = "agentlibre.qwen38-27b-reasoning"
 version = "1.0.0"
-content_digest = "sha256:e9579e93dd5ef5a2673b4a2a5da6916a69a7ebf263127b0921be20867d2ac70b"
+content_digest = "sha256:54aa515a0c2b7e0341c0dbe06bfc8d19f8122744aaff0f7286a5cd8d812c7b9d"
 
 [[entities]]
 kind = "agent"
@@ -34,3 +34,13 @@ content_digest = "sha256:f6e5d93588ce2c2fb4e5ebe0195ab24710c77948fa41aeb8fc2f712
 [entities.source]
 kind = "local"
 path = "extensions/builtins"
+
+[[entities]]
+kind = "extension"
+id = "agentlibre.execution"
+version = "1.0.0-alpha.15"
+content_digest = "sha256:c00468819141a86d40f9f9d426ff6432baec6490a6a03af4c73e1af9f316c4f9"
+
+[entities.source]
+kind = "local"
+path = "extensions/agentlibre-execution"

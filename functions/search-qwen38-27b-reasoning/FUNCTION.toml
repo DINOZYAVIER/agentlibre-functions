@@ -8,14 +8,11 @@ extensions = [
     { id = "agentlibre.builtins", version = "1.0.0-alpha.15" },
     { id = "agentlibre.searxng", version = "1.0.0-alpha.1" },
 ]
-tools = [
-    "agentlibre.builtins:fs_read",
-    "agentlibre.searxng:search",
-]
 working_directory = "."
-authority = [
-    { effect = "agentlibre.searxng:query", scope = { service = "ayeque-search", sources = ["web", "wikipedia"] } },
-]
+
+[permissions]
+files = "read"
+search = true
 
 [inference.generation]
 max_output_tokens = 49152
