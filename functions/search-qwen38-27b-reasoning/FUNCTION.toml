@@ -30,7 +30,7 @@ default = "xhigh"
 preserve = true
 
 [inference.load]
-context_tokens = 131072
+context_tokens = 62208
 batch_size = 2048
 ubatch_size = 512
 threads = 12
@@ -41,6 +41,12 @@ mmap = true
 flash_attention = true
 kv_cache_type_k = "f16"
 kv_cache_type_v = "f16"
+
+[inference.speculative]
+mode = "mtp"
+max_draft_tokens = 3
+kv_cache_type_k = "q4_0"
+kv_cache_type_v = "q4_0"
 
 [inference.service]
 slots = 1
