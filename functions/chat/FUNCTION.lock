@@ -3,7 +3,7 @@ schema = "agentlibre.function-lock/v1"
 [function]
 id = "agentlibre.chat"
 version = "1.0.0"
-content_digest = "sha256:f75748e4164e86a5f2e29e947e6a5ddaf1970dc469419c079c20da262715d6c3"
+content_digest = "sha256:c29403be08277eb2abeb2f05a71b9df64d64bab508fedee7c364d20bd3add316"
 
 [[entities]]
 kind = "agent"
@@ -29,7 +29,7 @@ path = "models/gemma4-12b"
 kind = "extension"
 id = "agentlibre.builtins"
 version = "1.0.0-alpha.15"
-content_digest = "sha256:f6e5d93588ce2c2fb4e5ebe0195ab24710c77948fa41aeb8fc2f7125a38b2ca3"
+content_digest = "sha256:42234667faeff305247e0dc6cbaff33a7b4e2539b48151d060c0edbb8e6b4a4d"
 
 [entities.source]
 kind = "local"
