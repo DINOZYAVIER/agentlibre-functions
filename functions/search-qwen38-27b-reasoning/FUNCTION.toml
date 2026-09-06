@@ -23,7 +23,7 @@ terminal = true
 search = true
 
 [inference.generation]
-max_output_tokens = 49152
+max_output_tokens = 32768
 temperature = 1.0
 top_p = 0.95
 top_k = 20
