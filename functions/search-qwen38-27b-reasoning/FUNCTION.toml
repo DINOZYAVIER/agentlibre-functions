@@ -6,12 +6,20 @@ agent = { id = "agentlibre.chat-agent", version = "1.0.0" }
 model = { id = "agentlibre.qwen38-27b", version = "1.0.0" }
 extensions = [
     { id = "agentlibre.builtins", version = "1.0.0-alpha.15" },
+    { id = "agentlibre.execution", version = "1.0.0-alpha.15" },
     { id = "agentlibre.searxng", version = "1.0.0-alpha.1" },
 ]
 working_directory = "."
 
 [permissions]
-files = "read"
+files = "write"
+commands = [
+    "bash", "cargo", "cat", "chmod", "cmake", "cp", "curl", "find", "git",
+    "head", "ls", "make", "mkdir", "mv", "ninja", "npm", "node", "python3",
+    "pwd", "rg", "rustc", "sed", "sh", "sort", "stat", "tail", "touch",
+    "uniq", "wc", "xargs",
+]
+terminal = true
 search = true
 
 [inference.generation]
