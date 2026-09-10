@@ -1,0 +1,56 @@
+schema = "agentlibre.function-lock/v1"
+
+[function]
+id = "agentlibre.search-qwen38-27b-reasoning-128k-q8"
+version = "1.0.0"
+content_digest = "sha256:de8d04835fe65da987fe3f95c5debae2267d467f6060a56923ed1481c8557bf6"
+
+[[entities]]
+kind = "agent"
+id = "agentlibre.chat-agent"
+version = "1.0.0"
+content_digest = "sha256:1599c7fb7f1cbf618439e20669bd69343ea70c930117647095c03f62eaaa920c"
+
+[entities.source]
+kind = "local"
+path = "agents/chat"
+
+[[entities]]
+kind = "model"
+id = "agentlibre.qwen38-27b"
+version = "1.0.0"
+content_digest = "sha256:3deae9b5d90f9fe6ebf6244a5f5ee7a0ec888ec59bd90424321387642f9277e0"
+
+[entities.source]
+kind = "local"
+path = "models/qwen38-27b"
+
+[[entities]]
+kind = "extension"
+id = "agentlibre.builtins"
+version = "1.0.0-alpha.15"
+content_digest = "sha256:42234667faeff305247e0dc6cbaff33a7b4e2539b48151d060c0edbb8e6b4a4d"
+
+[entities.source]
+kind = "local"
+path = "extensions/builtins"
+
+[[entities]]
+kind = "extension"
+id = "agentlibre.execution"
+version = "1.0.0-alpha.15"
+content_digest = "sha256:c00468819141a86d40f9f9d426ff6432baec6490a6a03af4c73e1af9f316c4f9"
+
+[entities.source]
+kind = "local"
+path = "extensions/agentlibre-execution"
+
+[[entities]]
+kind = "extension"
+id = "agentlibre.searxng"
+version = "1.0.0-alpha.1"
+content_digest = "sha256:623c5a0fa230c95a7b53b388748fdf1fe6ffefa501891efaac73fbc7a2ce8c57"
+
+[entities.source]
+kind = "local"
+path = "extensions/searxng"
