@@ -13,6 +13,33 @@ chars = 500
 [presentation.tool]
 frame = true
 
+[presentation.colors]
+rule = "dim"
+run = "bold #FF00FF"
+run_id = "bold #FFFFFF"
+status_success = "bold #00FF00"
+status_failure = "bold #FF0000"
+status_pending = "bold #FFFF00"
+operation = "bold #00FFFF"
+tool = "bold #00FFFF"
+ordinal = "dim"
+field = "bold #0000FF"
+muted = "dim"
+json_key = "#00FFFF"
+json_string = "#00FF00"
+json_number = "#FFFF00"
+json_boolean = "#FF00FF"
+json_null = "dim"
+markdown_heading = "bold #00FFFF"
+markdown_code = "dim"
+markdown_inline_code = "#FFFF00"
+markdown_strong = "bold"
+markdown_emphasis = "italic"
+markdown_link = "#0000FF"
+markdown_quote = "dim"
+markdown_bullet = "#00FFFF"
+markdown_rule = "dim"
+
 [presentation.model_generation]
 details = false
 
