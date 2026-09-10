@@ -44,6 +44,12 @@ markdown_link = "#8AA2D8"
 markdown_quote = "dim"
 markdown_bullet = "#00FFFF"
 markdown_rule = "dim"
+input_rule = "oklch(0.439 0 0)"
+input_prompt = "bold oklch(0.718 0.202 349.761)"
+input_hint = "dim oklch(0.823 0.12 346.018)"
+input_text = "oklch(0.936 0.032 17.717)"
+input_activity = "oklch(0.823 0.12 346.018)"
+input_selected = "bold oklch(0.518 0.253 323.949)"
 
 [presentation.model_generation]
 details = false
