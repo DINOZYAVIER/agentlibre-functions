@@ -1,4 +1,4 @@
-schema = "agentlibre.function/v1"
+schema = "agentlibre.function/v2"
 id = "agentlibre.chat-reasoning"
 version = "1.0.0"
 agent = { id = "agentlibre.chat-agent", version = "1.0.0" }
@@ -8,6 +8,10 @@ extensions = [
     { id = "agentlibre.execution", version = "1.0.0-alpha.15" },
 ]
 working_directory = "."
+
+[presentation.tool_output]
+lines = 10
+chars = 500
 
 [permissions]
 files = "read"

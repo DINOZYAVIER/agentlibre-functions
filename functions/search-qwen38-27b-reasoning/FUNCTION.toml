@@ -1,4 +1,4 @@
-schema = "agentlibre.function/v1"
+schema = "agentlibre.function/v2"
 id = "agentlibre.search-qwen38-27b-reasoning"
 version = "1.0.0"
 description = "Qwen3.8 27B reasoning with bounded AYEQUE search"
@@ -10,6 +10,10 @@ extensions = [
     { id = "agentlibre.searxng", version = "1.0.0-alpha.1" },
 ]
 working_directory = "."
+
+[presentation.tool_output]
+lines = 10
+chars = 500
 
 [permissions]
 files = "write"
