@@ -3,7 +3,7 @@ schema = "agentlibre.function-lock/v1"
 [function]
 id = "agentlibre.chat"
 version = "1.0.0"
-content_digest = "sha256:ef9dcc4d9a1c0825e9fd86eaf00382c4139e91dc57fbf9d6cd4f3e8b3f985748"
+content_digest = "sha256:e3589b09b9eae8b1828720ef00de44f52dd213a450fa5bd9762efad2d366a08d"
 
 [[entities]]
 kind = "agent"

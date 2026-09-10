@@ -13,6 +13,9 @@ working_directory = "."
 lines = 10
 chars = 500
 
+[presentation.model_generation]
+details = false
+
 [permissions]
 files = "read"
 commands = ["find", "rg"]
