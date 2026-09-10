@@ -13,6 +13,9 @@ working_directory = "."
 lines = 10
 chars = 500
 
+[presentation.tool]
+frame = true
+
 [presentation.model_generation]
 details = false
 
