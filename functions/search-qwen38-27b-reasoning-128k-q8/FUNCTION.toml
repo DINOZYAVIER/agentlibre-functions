@@ -77,8 +77,8 @@ repeat_penalty = 1.0
 
 [inference.reasoning]
 enabled = true
-max_tokens = 32768
-default = "xhigh"
+max_tokens = 16384
+default = "medium"
 preserve = true
 
 [inference.load]
@@ -107,7 +107,6 @@ continuous_batching = true
 idle_timeout = "15m"
 
 [limits]
-timeout = "30m"
 # No aggregate input cap; exact per-request context capacity still applies.
 model_output_tokens = 100000
 model_calls = 100
