@@ -5,8 +5,8 @@ description = "Qwen3.8 27B reasoning with 32K context and q8 KV-cache."
 agent = { id = "agentlibre.chat-agent-windows-opinion", version = "1.0.0" }
 model = { id = "agentlibre.qwen38-27b", version = "1.0.0" }
 extensions = [
-    { id = "agentlibre.builtins", version = "1.0.0-alpha.15" },
-    { id = "agentlibre.execution", version = "1.0.0-alpha.15" },
+    { id = "agentlibre.builtins", version = "1.0.0-alpha.19" },
+    { id = "agentlibre.execution", version = "1.0.0-alpha.19" },
     { id = "agentlibre.searxng", version = "1.0.0-alpha.1" },
 ]
 working_directory = "."
