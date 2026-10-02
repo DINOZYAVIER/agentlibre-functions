@@ -5,7 +5,8 @@ description = "Qwen3.8 27B reasoning with 128K context and q8 KV-cache."
 agent = { id = "agentlibre.chat-agent", version = "1.0.0" }
 model = { id = "agentlibre.qwen38-27b", version = "1.0.0" }
 extensions = [
-    { id = "agentlibre.builtins", version = "1.0.0-alpha.19" },
+    { id = "agentlibre.files", version = "1.0.0-alpha.19" },
+    { id = "agentlibre.forge", version = "1.0.0-alpha.19" },
     { id = "agentlibre.execution", version = "1.0.0-alpha.19" },
     { id = "agentlibre.searxng", version = "1.0.0-alpha.1" },
 ]

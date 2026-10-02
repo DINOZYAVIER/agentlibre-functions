@@ -4,7 +4,8 @@ version = "1.0.0"
 agent = { id = "agentlibre.chat-agent", version = "1.0.0" }
 model = { id = "agentlibre.qwen38-27b", version = "1.0.0" }
 extensions = [
-    { id = "agentlibre.builtins", version = "1.0.0-alpha.19" },
+    { id = "agentlibre.files", version = "1.0.0-alpha.19" },
+    { id = "agentlibre.forge", version = "1.0.0-alpha.19" },
     { id = "agentlibre.execution", version = "1.0.0-alpha.19" },
 ]
 working_directory = "."
